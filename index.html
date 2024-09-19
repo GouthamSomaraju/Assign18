@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+     width: 50vw;
+      border: 2px solid;
+      gap: 10px;
+      padding: 5px;
+      display: grid;
+      margin: auto;
+      grid-template-columns: auto auto auto;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    
+    /* For medium mobile Users */
+    @media screen and (max-width:375px) {
+      .container{
+        grid-template-columns: auto;
+      }
+      
+    }
+    @media screen and (min-width:376px) and (max-width:768px) {
+      .container{
+        grid-template-columns: auto auto;
+      }
+      
+    }
+      /* for laptop users */
+    @media screen and (min-width:769px)  {
+      .item2{
+      grid-column: 2/3;
+      grid-row: 1/3;
+    }
+    .item7{
+      grid-column: 2/3;
+      grid-row: 3/5;
+    }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="item item1" src="./Assets/images/1.jfif" alt="">
+    <img class="item item2" src="./Assets/images/4.jpg" alt="">
+    <img class="item item3" src="./Assets/images/3.jpg" alt="">
+    <img class="item item4" src="./Assets/images/2.jfif" alt="">
+    <img class="item item5" src="./Assets/images/5.jpg" alt="">
+    <img class="item item6" src="./Assets/images/5.jpg" alt="">
+    <img class="item item7" src="./Assets/images/4.jpg" alt="">
+    <img class="item item8" src="./Assets/images/3.jpg" alt="">
+    <img class="item item9" src="./Assets/images/2.jfif" alt="">
+    <img class="item item10" src="./Assets/images/1.jfif" alt="">
+  </div>
+</body>
+</html>
